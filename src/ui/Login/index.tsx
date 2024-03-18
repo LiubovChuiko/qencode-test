@@ -82,7 +82,7 @@ export default function LoginScreen() {
         navigate("/");
       }
     },
-    [setErrors, setFailureCount, failureCount],
+    [setErrors, setFailureCount, setCookie, navigate, validateForm, failureCount],
   );
 
   return (

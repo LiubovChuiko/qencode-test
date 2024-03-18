@@ -29,7 +29,7 @@ export default function HomeScreen() {
     });
     if (refresh_token) localStorage.setItem('refresh_token', refresh_token);
     setAuth(true);
-  }, [setAuth]);
+  }, [setAuth, setCookie]);
 
   React.useEffect(() => {
     checkAccessToken();
@@ -37,7 +37,7 @@ export default function HomeScreen() {
 
   React.useEffect(() => {
     if (!auth) navigate("/login")
-  }, [auth]);
+  }, [auth, navigate]);
 
   return (
     <div>Lucky you</div>

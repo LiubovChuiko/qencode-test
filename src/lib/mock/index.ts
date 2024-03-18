@@ -1,8 +1,4 @@
-import {
-  LoginResponse,
-  LoginResponseBody,
-  ResetResponseBody,
-} from 'lib/api/api-data-types';
+import {LoginResponseBody, ResetResponseBody} from 'lib/api/api-data-types';
 
 export const mockLoginBodyResponse = (): LoginResponseBody => {
   return {

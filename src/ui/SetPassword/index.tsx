@@ -71,7 +71,7 @@ export default function SetPasswordScreen() {
           }, 3000);
       }
     },
-    [setErrors],
+    [setErrors, navigate, validateForm],
   );
 
   return (

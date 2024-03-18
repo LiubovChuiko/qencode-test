@@ -1,14 +1,12 @@
 import {ToastPosition, toast} from 'react-toastify';
 import {Detail} from 'lib/api/api-data-types';
 
-type Props = {
-    message: Detail | string | undefined;
-    position?: string;
-    autoClose?: number;
-}
-
 export default class NotificationService {
-  static notifyError = (message: Detail | undefined, autoClose: number = 5000, position:ToastPosition = "top-center") => {
+  static notifyError = (
+    message: Detail | undefined,
+    autoClose: number = 5000,
+    position: ToastPosition = 'top-center',
+  ) => {
     toast.error(message, {
       position: position,
       autoClose: autoClose,
@@ -20,7 +18,11 @@ export default class NotificationService {
     });
   };
 
-  static notifySuccess = (message: string | undefined, autoClose: number = 5000, position:ToastPosition = "top-center") => {
+  static notifySuccess = (
+    message: string | undefined,
+    autoClose: number = 5000,
+    position: ToastPosition = 'top-center',
+  ) => {
     toast.success(message, {
       position: position,
       autoClose: autoClose,

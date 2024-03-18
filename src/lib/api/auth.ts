@@ -4,10 +4,6 @@ import {LoginResponse} from './api-data-types';
 
 export default class AuthServices {
   static verifyAccessToken = () => {
-    const options = {
-      method: 'POST',
-      body: null,
-    };
     return checkWithAuth(URI.ACCESS_TOKEN_API);
   };
 

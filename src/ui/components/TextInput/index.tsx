@@ -1,4 +1,3 @@
-import {FormEvent, useState} from 'react';
 import React from 'react';
 import './textInput.scss';
 

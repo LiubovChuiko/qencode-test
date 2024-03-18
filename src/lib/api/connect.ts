@@ -1,4 +1,4 @@
-import {checkWithAuth, fetchWithoutAuth} from './fetchApi';
+import {fetchWithoutAuth} from './fetchApi';
 import {mockLoginBodyResponse, mockResetPasswordResponse} from 'lib/mock';
 import {
   LoginResponse,

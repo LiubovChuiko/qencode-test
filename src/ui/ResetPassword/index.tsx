@@ -1,5 +1,4 @@
 import React from 'react';
-import {ToastContainer} from 'react-toastify';
 import ConnectionServices from 'lib/api/connect';
 import NotificationService from 'services/notification';
 import * as Utils from 'lib/utils';
@@ -64,7 +63,7 @@ export default function ResetPasswordScreen() {
         }, 3000);
       }
     },
-    [setErrors],
+    [setErrors, navigate, validateForm],
   );
 
   return (
