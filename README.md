@@ -14,14 +14,14 @@ Access at [netlify.com](https://google.com)
 
 ## About The App
 Login Interface - created integrated version of the Qencode Login UI using React, based on the design from
-[Figma](https://www.figma.com/file/jyCTDwiw4IwadVfae9FMu8/Qencode-Frontend-Developer-Test?type=design&node-id=1-620&mode=design&t=Lvwuh2t5UC0gED9i-0) and the [Authentication API specification](https://auth-qa.qencode.com/v1/auth-api-references) provided with task description.
+[Figma] and the Authentication API specification provided with task description.
 
 
 ## Used 3-d party
-Styling: `sass`
-Navigation: `react-router-dom`
-AccessToken Storage: `react-cookie`
-Inner Notifications (Error Handling): `react-toastify`
+- Styling: `sass`
+- Navigation: `react-router-dom`
+- AccessToken Storage: `react-cookie`
+- Inner Notifications (Error Handling): `react-toastify`
 
 ## Setup
 - download or clone the repository
