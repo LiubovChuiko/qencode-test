@@ -1,0 +1,62 @@
+@use 'styles/variables.module.scss' as *;
+
+.section {
+  @extend %section;
+
+  .signin {
+    @extend %row;
+    margin: 5rem auto;
+
+    .auth_buttons {
+      margin: 2rem 0;
+      gap: 1rem;
+      text-align: start;
+
+      @media (min-width: 1024px) {
+        display: flex;
+      }
+    }
+
+    .divider {
+      --b: 1px;
+      --w: 180px;
+      --g: 10px;
+      --c: #e3e6e9;
+
+      width: fit-content;
+      margin: 2rem 0;
+      line-height: 1.6em;
+      border: 1px solid;
+      color: $extralight-text;
+      background: $primary-bg;
+      background-size: 30% 100%;
+      background-origin: border-box;
+      background-repeat: no-repeat;
+      border-image: linear-gradient(
+          $primary-bg calc(50% - var(--b) / 2),
+          var(--c) 0 calc(50% + var(--b) / 2),
+          $primary-bg 0
+        )
+        1/0 var(--w) / calc(var(--w) + var(--g));
+      margin-inline: auto;
+    }
+
+    .signin_form {
+      margin-bottom: 1.5rem;
+
+      .forgot_password {
+        justify-content: end;
+        text-align: end;
+
+        a {
+          font-size: 0.9rem;
+          font-weight: 600;
+        }
+      }
+
+      .submit {
+        margin-top: 1.5rem;
+      }
+    }
+  }
+}

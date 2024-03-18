@@ -18,7 +18,16 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "baseUrl": "src", 
+    "paths": {
+      "fonts/*": ["fonts/*"],
+      "services/*": ["services/*"],
+      "styles/*": ["styles/*"],
+      "ui/*": ["ui/*"],
+      "lib/*": ["lib/*"],
+      "navigation/*": ["navigation/*"],
+    }
   },
   "include": [
     "src"

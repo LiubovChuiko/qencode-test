@@ -1,0 +1,22 @@
+@use 'styles/variables.module.scss' as *;
+
+.section {
+  @extend %section;
+
+  .reset {
+    @extend %row;
+    margin: 5rem auto;
+    
+    .reset_form {
+      margin: 4rem 0 1rem 0;
+
+      .submit {
+        margin-top: 0.5rem;
+      }
+
+      .cancel {
+        margin-top: 0.5rem;
+      }
+    }
+  }
+}

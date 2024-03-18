@@ -1,0 +1,56 @@
+$primary-bg: #ffffff;
+$white-text: #ffffff;
+$primary-text: #060e1e; /* primary text */
+$secondary-text: #1a1919; /* header text */
+$light-text: #a1abb5; /* placeholder */
+$extralight-text: #bec5cc; /* divider text */
+$button-border: #d3d8dc; /* button border */
+$active-blue: #316fea; /* <a>, active button */
+
+%section {
+  width: 100vw;
+  background: $primary-bg;
+  overflow: hidden;
+
+  %header {
+    display: flex;
+    height: 32px;
+    margin-top: 180px;
+    background: url('../../public/assets/logo.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+  }
+
+  %row {
+    width: 100%;
+    padding: 0 1rem;
+    align-items: center;
+    text-align: center;
+    color: $primary-text;
+
+    @media (min-width: 1024px) {
+      max-width: 400px;
+      padding: 0;
+    }
+
+    span.title {
+      color: $secondary-text;
+      font-weight: 700;
+      font-size: 2rem;
+    }
+
+    span.regular {
+      font-weight: 400;
+      line-height: 16px;
+      width: min-content;
+      height: min-content;
+      white-space: nowrap;
+
+      a {
+        color: $active-blue;
+        font-weight: 600;
+      }
+    }
+  }
+}

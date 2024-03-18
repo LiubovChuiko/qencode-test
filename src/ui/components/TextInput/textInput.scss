@@ -1,0 +1,56 @@
+@use 'styles/variables.module.scss' as *;
+
+.label {
+  margin: 0 0 0.5rem 0;
+  text-align: start;
+  color: $primary-text;
+  font-weight: 600;
+  letter-spacing: 0.024rem;
+}
+
+.textInput {
+  position: relative;
+
+  input {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 12px;
+    gap: 6px;
+    width: 100%;
+    height: 48px;
+    background: $white-text;
+    border: 1.2px solid $button-border;
+    border-radius: 6px;
+
+    ::placeholder {
+      color: $light-text;
+      line-height: 20px;
+      opacity: 1;
+    }
+
+    ::-ms-input-placeholder {
+      color: $light-text;
+    }
+  }
+
+  .visibility {
+    position: absolute;
+    z-index: 10;
+    top: 0.75rem;
+    right: 0.75rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: url('../../../../public/assets/icons/ic_password.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0;
+  }
+}
+
+.validationMessage {
+  font-size: 0.8em;
+  color: red;
+  margin-top: 0.5em;
+}

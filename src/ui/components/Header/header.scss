@@ -1,0 +1,9 @@
+@use 'styles/variables.module.scss' as *;
+
+.section {
+  @extend %section;
+
+  .header {
+    @extend %header;
+  }
+}
