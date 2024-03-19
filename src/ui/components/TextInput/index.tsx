@@ -10,6 +10,7 @@ interface Props extends React.HTMLProps<HTMLInputElement> {
   required?: boolean;
   errorText?: string;
   RhsComponent?: JSX.Element;
+  onChange?: (e: any) => void;
 }
 
 const TextInput = React.memo(
@@ -22,6 +23,7 @@ const TextInput = React.memo(
     type,
     placeholder,
     RhsComponent,
+    onChange,
     ...rest
   }: Props) => {
     return (
@@ -33,6 +35,7 @@ const TextInput = React.memo(
             placeholder={placeholder ? placeholder : ''}
             required={required}
             type={type}
+            onChange={onChange}
           />
           {RhsComponent && <div>{RhsComponent}</div>}
         </div>
