@@ -33,4 +33,20 @@ export default class NotificationService {
       progress: undefined,
     });
   };
+
+  static notifyInfo = (
+    message: string | undefined,
+    autoClose: number = 1000,
+    position: ToastPosition = 'top-center',
+  ) => {
+    toast.info(message, {
+      position: position,
+      autoClose: autoClose,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: false,
+      progress: undefined,
+    });
+  };
 }

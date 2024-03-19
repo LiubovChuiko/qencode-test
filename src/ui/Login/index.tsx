@@ -85,6 +85,10 @@ export default function LoginScreen() {
     [setErrors, setFailureCount, setCookie, navigate, validateForm, failureCount],
   );
 
+  const onAuthClick = React.useCallback(() => {
+    NotificationService.notifyInfo("Not implemented yet")
+  }, [])
+
   return (
     <>
       <Header />
@@ -92,8 +96,8 @@ export default function LoginScreen() {
         <div className={styles.signin}>
           <span className={styles.title}>Log in to your account</span>
           <div className={styles.auth_buttons}>
-            <AuthButton auth="ic_google" label="Google" />
-            <AuthButton auth="ic_git" label="Github" />
+            <AuthButton auth="ic_google" label="Google" onClick={onAuthClick} />
+            <AuthButton auth="ic_git" label="Github" onClick={onAuthClick} />
           </div>
 
           <div className={styles.divider}>OR</div>
